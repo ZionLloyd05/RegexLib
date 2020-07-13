@@ -5,11 +5,11 @@ using Xunit;
 
 namespace RegexLib.FunctionalTests
 {
-    public class HomeControllerIndex : IClassFixture<CustomWebApplicationFactory<Startup>>
+    public class RootIndexPage : IClassFixture<CustomWebApplicationFactory<Startup>>
     {
         private readonly HttpClient _client;
 
-        public HomeControllerIndex(CustomWebApplicationFactory<Startup> factory)
+        public RootIndexPage(CustomWebApplicationFactory<Startup> factory)
         {
             _client = factory.CreateClient();
         }
@@ -21,7 +21,7 @@ namespace RegexLib.FunctionalTests
             response.EnsureSuccessStatusCode();
             string stringResponse = await response.Content.ReadAsStringAsync();
 
-            Assert.Contains("RegexLib.Web", stringResponse);
+            Assert.Contains("RegexLib", stringResponse);
         }
     }
 }

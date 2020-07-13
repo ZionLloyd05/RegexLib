@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CleanArchitecture.SharedKernel\RegexLib.SharedKernel.csproj" />
+    <ProjectReference Include="..\RegexLib.SharedKernel\RegexLib.SharedKernel.csproj" />
   </ItemGroup>
 
 </Project>

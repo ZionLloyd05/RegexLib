@@ -22,7 +22,7 @@
   </ItemGroup>
   
   <ItemGroup>
-    <ProjectReference Include="..\CleanArchitecture.UnitTests\RegexLib.UnitTests.csproj" />
+    <ProjectReference Include="..\RegexLib.UnitTests\RegexLib.UnitTests.csproj" />
   </ItemGroup>
 
 </Project>
